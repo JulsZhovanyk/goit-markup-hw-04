@@ -9,6 +9,7 @@
   --color-eight: #188ce8;
   --color-nine: #ececec;
   --color-ten: #eeeeee;
+  --bg-color: #c4c4c4;
   --font-one: "Raleway", sans-serif;
 }
 body {
@@ -150,9 +151,17 @@ img {
 /* ========= MAIN HERO SECTION ========== */
 
 .main-section {
-  background-color: var(--color-five);
+  background-color: var(--bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/main/background-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-section .container {
   display: flex;
