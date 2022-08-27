@@ -10,6 +10,7 @@
   --color-nine: #ececec;
   --color-ten: #eeeeee;
   --bg-color: #c4c4c4;
+  --icon-color: #afb1b8;
   --font-one: "Raleway", sans-serif;
 }
 body {
@@ -122,13 +123,30 @@ img {
 .list-of-workers,
 .addresses-list,
 .list-of-buttons,
-.list-of-links-portfolio {
+.list-of-links-portfolio,
+.social-list {
   list-style: none;
   display: flex;
 }
 
 .contacts-element:not(:last-child) {
   margin-right: 50px;
+}
+.contacts-element-link::before {
+  background-image: url("./images/icons.svg#icon-envelope");
+  width: 16px;
+  height: 12px;
+  display: block;
+}
+.contacts-element-link::before .smartphone {
+  background-image: url("./images/icons.svg#icon-envelope");
+  background-size: 16px 12px;
+}
+.envelope:hover,
+.smartphone:hover,
+.envelope:focus,
+.smartphone:focus {
+  fill: var(--color-two);
 }
 .contacts-element-link {
   font-style: normal;
@@ -208,13 +226,6 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--color-eight);
 }
-.section-list {
-  display: flex;
-  gap: 30px;
-}
-.section-list-element {
-  width: 270px;
-}
 
 /* ========= SECTION QUALITIES ========= */
 
@@ -239,6 +250,22 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.section-list {
+  display: flex;
+  gap: 30px;
+}
+.section-list-element {
+  width: 270px;
+}
+.antenna {
+  display: block;
+  border-radius: 4px;
+  background-color: var(--color-four);
+  background-size: 270px 120px;
+  margin-bottom: 30px;
+  width: 70px;
+  height: 70px;
 }
 .section-element {
   font-weight: 700;
@@ -312,6 +339,34 @@ img {
   text-decoration: none;
   text-align: center;
   color: var(--color-seven);
+}
+.social-list {
+  column-gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.social-list-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-one);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--color-one);
+  background-color: var(--color-two);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--color-one);
 }
 
 /* ========= FOOTER INFO ======== */
