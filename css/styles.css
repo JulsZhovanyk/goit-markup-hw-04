@@ -125,7 +125,8 @@ img {
 .list-of-buttons,
 .list-of-links-portfolio,
 .social-list,
-.clients-list {
+.clients-list,
+.social-list-footer {
   list-style: none;
   display: flex;
 }
@@ -418,6 +419,11 @@ img {
   background-color: var(--color-five);
   padding-top: 94px;
   padding-bottom: 94px;
+  display: flex;
+}
+.footer-info .container {
+  display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -449,19 +455,37 @@ img {
   text-decoration: none;
   font-style: normal;
 }
+.social-links-footer {
+  margin-left: 70px;
+}
 .footer-links-text {
   color: var(--color-one);
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
-.social-list-link .footer {
+.social-list-footer {
+  column-gap: 10px;
+}
+.social-list-link-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.social-list-icon .footer {
+.social-list-icon-footer {
+  width: 20px;
+  height: 20px;
   fill: var(--color-one);
 }
-
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--color-two);
+}
 /* !!! =============== PORTFOLIO STYLES =============== !!! */
 
 /* ======== SECTION PORTFOLIO ======== */
