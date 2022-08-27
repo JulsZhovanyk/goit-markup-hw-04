@@ -124,28 +124,30 @@ img {
 .addresses-list,
 .list-of-buttons,
 .list-of-links-portfolio,
-.social-list {
+.social-list,
+.clients-list {
   list-style: none;
   display: flex;
 }
-
 .contacts-element:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-element-link::before {
+.contacts-element-link::before .mail {
+  content: "";
   background-image: url("./images/icons.svg#icon-envelope");
+  background-size: 16px 12px;
+  display: inline-block;
+}
+.contacts-element-link::before {
+  background-image: url("./images/icons.svg#icon-smartphone");
   width: 16px;
   height: 12px;
   display: block;
 }
-.contacts-element-link::before .smartphone {
-  background-image: url("./images/icons.svg#icon-envelope");
-  background-size: 16px 12px;
-}
-.envelope:hover,
-.smartphone:hover,
-.envelope:focus,
-.smartphone:focus {
+.contacts-element-link:hover .envelope,
+.contacts-element-link:hover .smartphone,
+.contacts-element-link:focus .envelope,
+.contacts-element-link:focus .smartphone {
   fill: var(--color-two);
 }
 .contacts-element-link {
@@ -369,6 +371,41 @@ img {
   fill: var(--color-one);
 }
 
+/* ========= SECTION CLIENTS ======== */
+
+.section-clients {
+  padding-top: 104px;
+  padding-bottom: 94px;
+}
+.section-clients .section-header {
+  margin-bottom: 50px;
+}
+.clients-list {
+  gap: 30px;
+}
+.clients-list-link {
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--color-two);
+}
+.clients-list-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+}
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+  fill: var(--color-two);
+}
+
 /* ========= FOOTER INFO ======== */
 
 .footer-info {
@@ -405,6 +442,18 @@ img {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+}
+.footer-links-text {
+  color: var(--color-one);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.social-list-link .footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list-icon .footer {
+  fill: var(--color-one);
 }
 
 /* !!! =============== PORTFOLIO STYLES =============== !!! */
