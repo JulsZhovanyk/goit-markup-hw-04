@@ -132,17 +132,17 @@ img {
 .contacts-element:not(:last-child) {
   margin-right: 50px;
 }
-.contacts-element-link::before .mail {
-  content: "";
-  background-image: url("./images/icons.svg#icon-envelope");
-  background-size: 16px 12px;
-  display: inline-block;
-}
-.contacts-element-link::before {
-  background-image: url("./images/icons.svg#icon-smartphone");
+.envelope {
   width: 16px;
   height: 12px;
-  display: block;
+  fill: var(--color-seven);
+  margin-right: 10px;
+}
+.smartphone {
+  width: 16px;
+  height: 12px;
+  fill: var(--color-seven);
+  margin-right: 10px;
 }
 .contacts-element-link:hover .envelope,
 .contacts-element-link:hover .smartphone,
@@ -518,6 +518,12 @@ img {
 }
 .link-portfolio {
   text-decoration: none;
+  display: block;
+}
+.link-portfolio:hover,
+.link-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-text {
   padding: 20px 24px;
