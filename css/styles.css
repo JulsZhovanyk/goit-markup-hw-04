@@ -140,8 +140,8 @@ img {
   margin-right: 10px;
 }
 .smartphone {
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 16px;
   fill: var(--color-seven);
   margin-right: 10px;
 }
@@ -159,6 +159,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-seven);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .contacts-element-link:hover,
 .contacts-element-link:focus,
